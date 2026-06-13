@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RouteResponse",
+  "properties": {
+    "response": {
+      "$ref": "#/components/schemas/Routes"
+    },
+    "request": {
+      "$ref": "#/components/schemas/RouteRequest"
+    }
+  },
+  "type": "object"
+}

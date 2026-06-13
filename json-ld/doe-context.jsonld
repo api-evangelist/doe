@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "doe": "https://www.energy.gov/vocab/",
+    "eia": "https://www.eia.gov/opendata/vocab/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "Organization": "https://schema.org/Organization",
+    "WebAPI": "https://schema.org/WebAPI",
+    "Dataset": "dcat:Dataset",
+    "DataService": "dcat:DataService",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "documentation": "schema:documentation",
+    "version": "schema:version",
+    "license": "dcterms:license",
+    "publisher": "dcterms:publisher",
+    "keyword": "dcat:keyword",
+    "period": {
+      "@id": "dcterms:temporal",
+      "@type": "dcterms:PeriodOfTime"
+    },
+    "frequency": "dcterms:accrualPeriodicity",
+    "route": "eia:route",
+    "facet": "eia:facet",
+    "series": "eia:series",
+    "apiKey": "eia:apiKey",
+    "energySource": "doe:energySource",
+    "sector": "doe:sector",
+    "stateCode": "doe:stateCode",
+    "unit": "schema:unitText"
+  },
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.energy.gov/",
+      "name": "U.S. Department of Energy",
+      "url": "https://www.energy.gov/",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q154952",
+        "https://twitter.com/energy"
+      ]
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://www.eia.gov/opendata/",
+      "name": "EIA Open Data API",
+      "description": "The U.S. Energy Information Administration Open Data API providing comprehensive energy time-series data including electricity, natural gas, petroleum, coal, nuclear, and renewable fuels.",
+      "url": "https://www.eia.gov/opendata/",
+      "documentation": "https://www.eia.gov/opendata/documentation.php",
+      "publisher": {
+        "@id": "https://www.energy.gov/"
+      },
+      "version": "2",
+      "license": "https://www.eia.gov/opendata/terms-of-service.php",
+      "keyword": [
+        "energy",
+        "electricity",
+        "natural gas",
+        "petroleum",
+        "coal",
+        "nuclear",
+        "renewable energy",
+        "time-series"
+      ]
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://developer.nlr.gov/",
+      "name": "NREL/NLR Developer Network APIs",
+      "description": "APIs for renewable energy data including solar, wind, electricity, transportation, alternative fuels, and building energy efficiency.",
+      "url": "https://developer.nlr.gov/",
+      "documentation": "https://developer.nlr.gov/docs/",
+      "publisher": {
+        "@id": "https://www.energy.gov/"
+      },
+      "keyword": [
+        "solar energy",
+        "wind energy",
+        "electric vehicles",
+        "alternative fuels",
+        "renewable energy",
+        "buildings"
+      ]
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://www.osti.gov/api/v1",
+      "name": "OSTI.GOV API",
+      "description": "Access to Department of Energy scientific publications, technical reports, and research datasets.",
+      "url": "https://www.osti.gov/api/v1/docs",
+      "documentation": "https://www.osti.gov/api/v1/docs",
+      "publisher": {
+        "@id": "https://www.energy.gov/"
+      },
+      "keyword": [
+        "scientific research",
+        "publications",
+        "technical reports",
+        "open access",
+        "DOE research"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "description": "Example EIA API v2 facet/filter options response",
+  "api": "EIA Open Data API v2",
+  "endpoint": "/v2/electricity/retail-sales/facet/stateid",
+  "response": {
+    "response": {
+      "id": "stateid",
+      "description": "State",
+      "facets": [
+        {
+          "id": "AK",
+          "name": "Alaska"
+        },
+        {
+          "id": "AL",
+          "name": "Alabama"
+        },
+        {
+          "id": "AR",
+          "name": "Arkansas"
+        },
+        {
+          "id": "US",
+          "name": "U.S. Total"
+        }
+      ]
+    }
+  }
+}

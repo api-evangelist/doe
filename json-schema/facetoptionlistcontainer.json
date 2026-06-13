@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FacetOptionListContainer",
+  "properties": {
+    "apiVersion": {
+      "type": "string"
+    },
+    "request": {
+      "$ref": "#/components/schemas/RouteRequest"
+    },
+    "response": {
+      "$ref": "#/components/schemas/FacetOptionList"
+    }
+  },
+  "type": "object"
+}

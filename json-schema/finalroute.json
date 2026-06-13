@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FinalRoute",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "frequency": {
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/Frequency"
+      }
+    },
+    "facets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/FacetMetaData"
+      }
+    },
+    "data": {},
+    "startPeriod": {
+      "type": "string"
+    },
+    "endPeriod": {
+      "type": "string"
+    },
+    "defaultDateFormat": {
+      "type": "string"
+    },
+    "defaultFrequency": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,41 @@
+{
+  "description": "Example EIA API v2 route response",
+  "api": "EIA Open Data API v2",
+  "endpoint": "/v2/{route}",
+  "response": {
+    "response": {
+      "id": "electricity",
+      "name": "Electricity",
+      "description": "Electricity data including generation, consumption, prices, and more.",
+      "frequency": [
+        {
+          "id": "monthly",
+          "description": "One data point for each calendar month.",
+          "query": "M",
+          "format": "YYYY-MM"
+        },
+        {
+          "id": "annual",
+          "description": "One data point for each calendar year.",
+          "query": "A",
+          "format": "YYYY"
+        }
+      ],
+      "routes": [
+        {
+          "id": "retail-sales",
+          "name": "Retail Sales of Electricity",
+          "description": "Electricity retail sales by sector and state."
+        },
+        {
+          "id": "electric-power-operational-data",
+          "name": "Electric Power Operational Data"
+        }
+      ]
+    },
+    "request": {
+      "command": "/v2/electricity/",
+      "params": {}
+    }
+  }
+}

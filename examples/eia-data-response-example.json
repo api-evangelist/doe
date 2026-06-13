@@ -1,0 +1,54 @@
+{
+  "description": "Example EIA API v2 data response for electricity retail sales",
+  "api": "EIA Open Data API v2",
+  "endpoint": "/v2/electricity/retail-sales/data",
+  "request_params": {
+    "frequency": "monthly",
+    "data[0]": "sales",
+    "start": "2023-01",
+    "end": "2023-12",
+    "sort[0][column]": "period",
+    "sort[0][direction]": "desc",
+    "length": 5
+  },
+  "response": {
+    "response": {
+      "total": 600,
+      "dateFormat": {
+        "monthly": "YYYY-MM"
+      },
+      "frequency": "monthly",
+      "data": [
+        {
+          "period": "2023-12",
+          "stateid": "US",
+          "sectorid": "ALL",
+          "stateDescription": "U.S. Total",
+          "sectorName": "All Sectors",
+          "sales": 335012.3,
+          "sales-units": "million kilowatthours"
+        },
+        {
+          "period": "2023-11",
+          "stateid": "US",
+          "sectorid": "ALL",
+          "stateDescription": "U.S. Total",
+          "sectorName": "All Sectors",
+          "sales": 312445.6,
+          "sales-units": "million kilowatthours"
+        }
+      ]
+    },
+    "request": {
+      "command": "/v2/electricity/retail-sales/data/",
+      "params": {
+        "frequency": "monthly",
+        "data": [
+          "sales"
+        ],
+        "start": "2023-01",
+        "end": "2023-12"
+      }
+    }
+  }
+}

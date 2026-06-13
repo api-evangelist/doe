@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FacetOptionList",
+  "properties": {
+    "totalFacetOptions": {
+      "type": "integer"
+    },
+    "facetOptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "type": "object"
+}

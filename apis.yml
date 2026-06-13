@@ -40,7 +40,7 @@ apis:
       - type: Documentation
         url: https://www.eia.gov/opendata/documentation.php
       - type: OpenAPI
-        url: https://www.eia.gov/opendata/browser/
+        url: https://raw.githubusercontent.com/api-evangelist/doe/refs/heads/main/openapi/eia-open-data-api-openapi.yaml
       - type: Signup
         url: https://www.eia.gov/opendata/register.php
       - type: TermsOfService

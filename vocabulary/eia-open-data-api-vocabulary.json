@@ -1,0 +1,36 @@
+{
+  "title": "EIA Open Data API Vocabulary",
+  "description": "Key terms and concepts used in the EIA Open Data API v2",
+  "source": "https://www.eia.gov/opendata/",
+  "tags": [
+    "AEO",
+    "COAL",
+    "CRUD_IMPORTS",
+    "DBF",
+    "ELEC",
+    "EMISS",
+    "IEO",
+    "INTL",
+    "NG",
+    "NUC_STATUS",
+    "RTO",
+    "Root",
+    "SEDS",
+    "SEP",
+    "STEO",
+    "TOTAL"
+  ],
+  "terms": {
+    "route1": "First level Sub route",
+    "data": "Data columns to filter by",
+    "facets": "Facets to filter by",
+    "frequency": "Frequency to filter by",
+    "start": "Start date to filter by",
+    "end": "End date to filter by",
+    "sort": "How to sort returned data",
+    "length": "Max length of returned data",
+    "offset": "Offset of returned data",
+    "facetId": "Facet ID",
+    "route2": "Second level Sub route"
+  }
+}
