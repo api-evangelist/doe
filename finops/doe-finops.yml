@@ -1,0 +1,95 @@
+name: Department of Energy API FinOps
+description: Financial operations guidance for consuming Department of Energy APIs. All primary DOE APIs are free of charge as public data services funded by the US government.
+url: https://raw.githubusercontent.com/api-evangelist/doe/refs/heads/main/finops/doe-finops.yml
+summary:
+  totalCost: 0
+  currency: USD
+  costModel: Free public government data service
+  notes: All Department of Energy APIs are provided at no cost to consumers as publicly funded government data services. No billing, invoicing, or payment is required.
+
+apis:
+
+  - name: EIA Open Data API
+    url: https://www.eia.gov/opendata/
+    cost: 0
+    currency: USD
+    billing: none
+    authentication: Free API key via registration at eia.gov/opendata/
+    costDrivers:
+      - type: rows-per-request
+        limit: 5000
+        format: JSON
+        cost: 0
+      - type: rows-per-request
+        limit: 300
+        format: XML
+        cost: 0
+    optimizationTips:
+      - Use pagination (offset/length parameters) to avoid hitting 5,000-row-per-request limit.
+      - Use bulk file downloads (updated twice daily) for large dataset needs instead of repeated API calls.
+      - Throttle recursive programs to avoid temporary key suspension.
+      - Cache responses locally to minimize redundant API requests.
+      - Use facets and date range filters to retrieve only required data subsets.
+    dataFormats:
+      - format: JSON
+        rowLimit: 5000
+      - format: XML
+        rowLimit: 300
+    alternativeAccess:
+      - type: Bulk Download
+        url: https://www.eia.gov/opendata/
+        notes: Bulk files updated twice daily at 5am and 3pm ET. No API key required.
+      - type: Excel Add-in
+        url: https://www.eia.gov/opendata/
+        notes: EIA Excel add-in v2.1.0 (released March 30, 2023).
+
+  - name: NLR/NREL Developer Network APIs
+    url: https://developer.nlr.gov/
+    cost: 0
+    currency: USD
+    billing: none
+    authentication: Free API key via registration at developer.nlr.gov/signup/
+    costDrivers:
+      - type: requests-per-hour
+        standardKey: 1000
+        demoKey: 30
+        cost: 0
+    optimizationTips:
+      - Register for a free API key to get 1,000 requests/hour vs 30/hour for DEMO_KEY.
+      - Monitor X-RateLimit-Remaining header to proactively throttle before hitting limits.
+      - Contact NLR support if you consistently need more than 1,000 requests/hour.
+      - Cache responses for static or slowly-changing datasets (e.g., alternative fuel station locations).
+      - Use the most specific API endpoint parameters to reduce response payload size.
+    domainCoverage:
+      - Buildings energy efficiency
+      - Climate resource data
+      - Electricity costs, generation, transmission
+      - Energy optimization / microgrids
+      - Solar resource data
+      - Transportation / alternative fuels / EVs
+      - Wave resource data
+      - Wind resource data
+
+  - name: OSTI.GOV API
+    url: https://www.osti.gov/api/v1/docs
+    cost: 0
+    currency: USD
+    billing: none
+    authentication: None required
+    optimizationTips:
+      - No authentication needed; begin querying immediately.
+      - Use pagination (rows/start parameters) to page through large result sets.
+      - Cache search results to reduce load on the public endpoint.
+    dataFormats:
+      - JSON
+      - XML
+      - BibTeX
+
+costAlerts: []
+budgetThresholds: []
+notes: >
+  As US government agencies, the Department of Energy, EIA, and NREL/NLR provide
+  their APIs as public services at no cost. FinOps considerations are limited to
+  engineering costs (developer time) and infrastructure costs for consuming and
+  caching API data. No vendor invoices, contracts, or procurement processes are
+  required to access these APIs.

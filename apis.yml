@@ -1,0 +1,213 @@
+aid: doe
+name: Department of Energy
+description: The U.S. Department of Energy provides REST APIs for energy consumption data, renewable energy statistics, fuel prices, electric vehicle infrastructure data, nuclear facility information, and scientific research publications. Primary API programs include the EIA Open Data API for energy time-series data, the NREL/NLR Developer Network for renewable energy and transportation data, and the OSTI APIs for DOE-funded research records.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/doe/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+type: Index
+tags:
+  - Energy
+  - Government
+  - Renewable Energy
+  - Electricity
+  - Natural Gas
+  - Petroleum
+  - Solar
+  - Wind
+  - Electric Vehicles
+  - Alternative Fuels
+  - Nuclear
+  - Scientific Research
+apis:
+  - aid: doe:eia-open-data-api
+    name: EIA Open Data API
+    description: The U.S. Energy Information Administration (EIA) Open Data API provides free access to comprehensive energy time-series data including electricity, natural gas, petroleum, coal, nuclear, renewable fuels, and state-level energy statistics. API v2 is fully RESTful over HTTPS.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.eia.gov/opendata/
+    baseURL: https://api.eia.gov/v2/
+    tags:
+      - Energy
+      - Electricity
+      - Natural Gas
+      - Petroleum
+      - Coal
+      - Nuclear
+      - Renewable Energy
+      - Time-Series Data
+    properties:
+      - type: Documentation
+        url: https://www.eia.gov/opendata/documentation.php
+      - type: OpenAPI
+        url: https://www.eia.gov/opendata/browser/
+      - type: Signup
+        url: https://www.eia.gov/opendata/register.php
+      - type: TermsOfService
+        url: https://www.eia.gov/opendata/terms-of-service.php
+      - type: FAQ
+        url: https://www.eia.gov/opendata/faqs.php
+    contact:
+      - FN: EIA Open Data Support
+        url: https://www.eia.gov/opendata/
+
+  - aid: doe:nlr-electricity-apis
+    name: NLR Electricity APIs
+    description: NREL/NLR Developer Network electricity APIs covering utility rates, electricity costs, generation, transmission, delivery, and monitoring. Includes OpenEI Utility Rates API providing access to utility rate structures for most U.S. utilities. Sponsored by the U.S. Department of Energy.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.nlr.gov/docs/electricity/
+    baseURL: https://developer.nlr.gov/api/
+    tags:
+      - Electricity
+      - Utility Rates
+      - Energy Costs
+    properties:
+      - type: Documentation
+        url: https://developer.nlr.gov/docs/electricity/
+      - type: Signup
+        url: https://developer.nlr.gov/signup/
+    contact:
+      - FN: NLR Developer Network
+        url: https://developer.nlr.gov/
+
+  - aid: doe:nlr-solar-apis
+    name: NLR Solar Resource APIs
+    description: Solar resource data and analysis APIs from NREL/NLR Developer Network, including NSRDB (National Solar Radiation Database) data access. Sponsored by the U.S. Department of Energy.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.nlr.gov/docs/solar/
+    baseURL: https://developer.nlr.gov/api/
+    tags:
+      - Solar Energy
+      - Renewable Energy
+      - Solar Resource Data
+    properties:
+      - type: Documentation
+        url: https://developer.nlr.gov/docs/solar/
+      - type: Signup
+        url: https://developer.nlr.gov/signup/
+    contact:
+      - FN: NLR Developer Network
+        url: https://developer.nlr.gov/
+
+  - aid: doe:nlr-wind-apis
+    name: NLR Wind Resource APIs
+    description: Wind resource data and analysis APIs from NREL/NLR Developer Network providing wind speed and direction data for energy planning. Sponsored by the U.S. Department of Energy.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.nlr.gov/docs/wind/
+    baseURL: https://developer.nlr.gov/api/
+    tags:
+      - Wind Energy
+      - Renewable Energy
+      - Wind Resource Data
+    properties:
+      - type: Documentation
+        url: https://developer.nlr.gov/docs/wind/
+      - type: Signup
+        url: https://developer.nlr.gov/signup/
+    contact:
+      - FN: NLR Developer Network
+        url: https://developer.nlr.gov/
+
+  - aid: doe:nlr-transportation-apis
+    name: NLR Transportation & Alternative Fuels APIs
+    description: Alternative fuel station locator, alternative fuel vehicles database, EV infrastructure (EVI-Pro Lite), battery policies, transportation laws and incentives, and route energy optimization (RouteE) APIs from NREL/NLR. Supports electric vehicle and alternative fuel infrastructure data.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.nlr.gov/docs/transportation/
+    baseURL: https://developer.nlr.gov/api/
+    tags:
+      - Electric Vehicles
+      - Alternative Fuels
+      - Transportation
+      - EV Infrastructure
+      - Fuel Stations
+    properties:
+      - type: Documentation
+        url: https://developer.nlr.gov/docs/transportation/
+      - type: Signup
+        url: https://developer.nlr.gov/signup/
+    contact:
+      - FN: NLR Developer Network
+        url: https://developer.nlr.gov/
+
+  - aid: doe:nlr-buildings-apis
+    name: NLR Buildings Energy APIs
+    description: APIs for energy efficiency and use of renewable technologies in residential and commercial buildings from NREL/NLR Developer Network. Sponsored by the U.S. Department of Energy.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.nlr.gov/docs/buildings/
+    baseURL: https://developer.nlr.gov/api/
+    tags:
+      - Buildings
+      - Energy Efficiency
+      - Renewable Energy
+    properties:
+      - type: Documentation
+        url: https://developer.nlr.gov/docs/buildings/
+      - type: Signup
+        url: https://developer.nlr.gov/signup/
+    contact:
+      - FN: NLR Developer Network
+        url: https://developer.nlr.gov/
+
+  - aid: doe:osti-api
+    name: OSTI.GOV API
+    description: The OSTI.GOV API provides access to the Department of Energy's repository of research information resulting from DOE research funding. Query scientific publications, technical reports, datasets, and research records. No authentication required.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.osti.gov/api/v1/docs
+    baseURL: https://www.osti.gov/api/v1
+    tags:
+      - Scientific Research
+      - Publications
+      - DOE Research
+      - Open Access
+    properties:
+      - type: Documentation
+        url: https://www.osti.gov/api/v1/docs
+      - type: OpenAPI
+        url: https://www.osti.gov/api/v1/docs
+    contact:
+      - FN: OSTI Support
+        url: https://www.osti.gov/
+
+  - aid: doe:doe-data-explorer-api
+    name: DOE Data Explorer API
+    description: The DOE Data Explorer API allows querying the Department of Energy's repository of research datasets resulting from DOE research funding. Built on REST architecture providing predictable URLs and HTTP-based access.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.osti.gov/dataexplorer/api/v1/docs
+    baseURL: https://www.osti.gov/dataexplorer/api/v1
+    tags:
+      - Research Data
+      - Scientific Datasets
+      - DOE Research
+    properties:
+      - type: Documentation
+        url: https://www.osti.gov/dataexplorer/api/v1/docs
+    contact:
+      - FN: OSTI Support
+        url: https://www.osti.gov/
+
+common:
+  - type: Website
+    url: https://www.energy.gov/
+  - type: Documentation
+    url: https://www.eia.gov/opendata/documentation.php
+  - type: GitHubOrg
+    url: https://github.com/doecode
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/u-s--department-of-energy
+  - type: Blog
+    url: https://www.energy.gov/articles
+  - type: Pricing
+    url: https://developer.nlr.gov/docs/rate-limits/
+  - type: StatusPage
+    url: https://www.eia.gov/opendata/
+  - type: X
+    url: https://twitter.com/energy
+  - type: Plans
+    url: plans/doe-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/doe-rate-limits.yml
+  - type: FinOps
+    url: finops/doe-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

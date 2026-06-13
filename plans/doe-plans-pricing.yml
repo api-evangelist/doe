@@ -1,0 +1,94 @@
+name: Department of Energy API Plans & Pricing
+description: Pricing and access plans for Department of Energy APIs including EIA Open Data, NREL/NLR Developer Network, and OSTI APIs.
+url: https://raw.githubusercontent.com/api-evangelist/doe/refs/heads/main/plans/doe-plans-pricing.yml
+plans:
+  - name: Free (EIA Open Data)
+    description: Free access to EIA energy data time-series API with API key registration. Covers electricity, natural gas, petroleum, coal, nuclear, and renewable energy datasets.
+    url: https://www.eia.gov/opendata/
+    price: 0
+    currency: USD
+    unit: month
+    rateLimits:
+      - type: rows-per-request
+        limit: 5000
+        period: request
+        format: JSON
+      - type: rows-per-request
+        limit: 300
+        period: request
+        format: XML
+    features:
+      - Free API key via registration
+      - Full access to all EIA energy datasets
+      - JSON and XML response formats
+      - Bulk file download option
+      - Excel add-in available
+    authentication: API Key (free registration required)
+
+  - name: Free (NLR/NREL Developer Network)
+    description: Free access to NREL/NLR renewable energy, transportation, solar, wind, wave, buildings, and climate APIs with API key. Sponsored by US Department of Energy.
+    url: https://developer.nlr.gov/signup/
+    price: 0
+    currency: USD
+    unit: month
+    rateLimits:
+      - type: requests
+        limit: 1000
+        period: hour
+    features:
+      - Buildings energy efficiency APIs
+      - Climate resource data
+      - Electricity cost and generation APIs
+      - Energy optimization tools
+      - Solar resource data
+      - Transportation and alternative fuel APIs
+      - Wave resource data
+      - Wind resource data
+    authentication: API Key (free registration required)
+
+  - name: DEMO_KEY (NLR/NREL Developer Network)
+    description: Demo key for evaluating NLR/NREL APIs without registration. Significantly rate-limited and intended for initial exploration only.
+    url: https://developer.nlr.gov/docs/
+    price: 0
+    currency: USD
+    unit: month
+    rateLimits:
+      - type: requests
+        limit: 30
+        period: hour
+      - type: requests
+        limit: 50
+        period: day
+    features:
+      - No registration required
+      - Explore APIs before signing up
+    authentication: DEMO_KEY (no registration required)
+
+  - name: Custom / Enterprise (NLR/NREL Developer Network)
+    description: Higher rate limits for organizations needing increased API capacity. Contact the NLR developer team for custom arrangements.
+    url: https://developer.nlr.gov/docs/rate-limits/
+    price: 0
+    currency: USD
+    unit: month
+    rateLimits:
+      - type: requests
+        limit: custom
+        period: hour
+    features:
+      - Custom rate limits above 1,000 requests/hour
+      - Contact support for pricing
+    authentication: API Key
+
+  - name: Free (OSTI.GOV API)
+    description: Free open access to DOE Office of Scientific and Technical Information research publications and data. No authentication required.
+    url: https://www.osti.gov/api/v1/docs
+    price: 0
+    currency: USD
+    unit: month
+    rateLimits: []
+    features:
+      - No API key required
+      - Search DOE-funded research records
+      - JSON, XML, and BibTeX formats
+      - Pagination support
+    authentication: None

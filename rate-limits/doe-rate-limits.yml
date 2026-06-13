@@ -1,0 +1,65 @@
+name: Department of Energy API Rate Limits
+description: Rate limit details for Department of Energy APIs including EIA Open Data, NREL/NLR Developer Network, and OSTI APIs.
+url: https://raw.githubusercontent.com/api-evangelist/doe/refs/heads/main/rate-limits/doe-rate-limits.yml
+rateLimits:
+
+  - api: EIA Open Data API
+    url: https://www.eia.gov/opendata/documentation.php
+    description: U.S. Energy Information Administration open data time-series API.
+    limits:
+      - type: rows-per-request
+        limit: 5000
+        period: request
+        format: JSON
+        notes: Maximum rows returned per single API request in JSON format.
+      - type: rows-per-request
+        limit: 300
+        period: request
+        format: XML
+        notes: Maximum rows returned per single API request in XML format.
+    enforcement: Recursive programs must throttle requests. Exceeding tolerances triggers temporary API key suspension with automatic reactivation after cooldown.
+    headers: []
+    notes: No explicit hourly/daily request count limit published. Key suspension enforced for abuse.
+
+  - api: NLR/NREL Developer Network APIs
+    url: https://developer.nlr.gov/docs/rate-limits/
+    description: National Renewable Energy Laboratory / National Laboratory of the Rockies renewable energy and transportation APIs sponsored by DOE.
+    limits:
+      - type: requests
+        limit: 1000
+        period: hour
+        key: standard
+        notes: Default hourly limit per API key across all NLR APIs. Rolling basis reset.
+      - type: requests
+        limit: 30
+        period: hour
+        key: DEMO_KEY
+        notes: Hourly limit per IP address for the DEMO_KEY (no registration).
+      - type: requests
+        limit: 50
+        period: day
+        key: DEMO_KEY
+        notes: Daily limit per IP address for the DEMO_KEY (no registration).
+    enforcement: HTTP 429 status returned when limit exceeded. Temporary block lifts automatically after one hour.
+    headers:
+      - name: X-RateLimit-Limit
+        description: Total requests allowed in current window.
+      - name: X-RateLimit-Remaining
+        description: Requests remaining in current window.
+    notes: Organizations requiring higher limits can contact NLR developer support for custom arrangements.
+
+  - api: OSTI.GOV API
+    url: https://www.osti.gov/api/v1/docs
+    description: DOE Office of Scientific and Technical Information research records API.
+    limits: []
+    enforcement: No documented rate limiting.
+    headers: []
+    notes: No authentication required. No published rate limits. Pagination defaults to 20 records per page.
+
+  - api: DOE Data Explorer API
+    url: https://www.osti.gov/dataexplorer/api/v1/docs
+    description: DOE research data repository query API.
+    limits: []
+    enforcement: No documented rate limiting.
+    headers: []
+    notes: REST architecture, HTTP-based access. No published rate limits documented.
