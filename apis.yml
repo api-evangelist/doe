@@ -186,6 +186,10 @@ apis:
         url: https://www.osti.gov/
 
 common:
+  - type: DomainSecurity
+    url: security/doe-domain-security.yml
+  - type: Authentication
+    url: authentication/doe-authentication.yml
   - type: Website
     url: https://www.energy.gov/
   - type: Documentation

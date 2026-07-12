@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/eia-open-data-api-openapi.yaml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - query
+schemes:
+- name: api_key
+  type: apiKey
+  in: query
+  parameter: api_key
+  sources:
+  - openapi/eia-open-data-api-openapi.yaml
