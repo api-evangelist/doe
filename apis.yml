@@ -186,6 +186,8 @@ apis:
         url: https://www.osti.gov/
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/doe-agentic-access.yml
   - type: DomainSecurity
     url: security/doe-domain-security.yml
   - type: Authentication
