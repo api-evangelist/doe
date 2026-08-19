@@ -1,0 +1,234 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "EIA APIv2 AEO NG API",
+    "version": "2.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api_key",
+      "value": "{{api_key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "NG",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /v2/natural-gas/{route1}/{route2}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/natural-gas/:route1/:route2",
+            "params": [
+              {
+                "name": "route1",
+                "value": "",
+                "type": "path",
+                "description": "First level Sub route"
+              },
+              {
+                "name": "route2",
+                "value": "",
+                "type": "path",
+                "description": "Second level Sub route"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/natural-gas/{route1}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/natural-gas/:route1",
+            "params": [
+              {
+                "name": "route1",
+                "value": "",
+                "type": "path",
+                "description": "First level Sub route"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/natural-gas/{route1}/{route2}/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/natural-gas/:route1/:route2/facet/:facet_id",
+            "params": [
+              {
+                "name": "route1",
+                "value": "",
+                "type": "path",
+                "description": "First level Sub route"
+              },
+              {
+                "name": "route2",
+                "value": "",
+                "type": "path",
+                "description": "Second level Sub route"
+              },
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/natural-gas/{route1}/{route2}/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/natural-gas/:route1/:route2/facet",
+            "params": [
+              {
+                "name": "route1",
+                "value": "",
+                "type": "path",
+                "description": "First level Sub route"
+              },
+              {
+                "name": "route2",
+                "value": "",
+                "type": "path",
+                "description": "Second level Sub route"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/natural-gas/{route1}/{route2}/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/natural-gas/:route1/:route2/data",
+            "params": [
+              {
+                "name": "route1",
+                "value": "",
+                "type": "path",
+                "description": "First level Sub route"
+              },
+              {
+                "name": "route2",
+                "value": "",
+                "type": "path",
+                "description": "Second level Sub route"
+              },
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return Natural Gas Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/natural-gas/:route1/:route2/data",
+            "params": [
+              {
+                "name": "route1",
+                "value": "",
+                "type": "path",
+                "description": "First level Sub route"
+              },
+              {
+                "name": "route2",
+                "value": "",
+                "type": "path",
+                "description": "Second level Sub route"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Return Natural Gas Data"
+        },
+        {
+          "info": {
+            "name": "GET /v2/natural-gas",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/natural-gas"
+          }
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,265 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "EIA APIv2 AEO EMISS API",
+    "version": "2.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api_key",
+      "value": "{{api_key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "EMISS",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /v2/co2-emissions/co2-emissions-aggregates/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/co2-emissions/co2-emissions-aggregates/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/co2-emissions/co2-emissions-and-carbon-coefficients/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/co2-emissions/co2-emissions-and-carbon-coefficients/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/co2-emissions/co2-emissions-aggregates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/co2-emissions/co2-emissions-aggregates"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/co2-emissions/co2-emissions-aggregates/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/co2-emissions/co2-emissions-aggregates/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/co2-emissions/co2-emissions-aggregates/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/co2-emissions/co2-emissions-aggregates/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return co2-emissions-aggregates Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/co2-emissions/co2-emissions-aggregates/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class CO2EmissionsAggregatesController\n\nCO2 Emissions Aggregates data set controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/co2-emissions/co2-emissions-and-carbon-coefficients",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/co2-emissions/co2-emissions-and-carbon-coefficients"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/co2-emissions/co2-emissions-and-carbon-coefficients/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/co2-emissions/co2-emissions-and-carbon-coefficients/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/co2-emissions/co2-emissions-and-carbon-coefficients/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/co2-emissions/co2-emissions-and-carbon-coefficients/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return co2-emissions-and-carbon-coefficients Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/co2-emissions/co2-emissions-and-carbon-coefficients/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class CO2EmissionsAndCarbonCoefficientsController\n\nCO2 Emissions Aggregates data set controller."
+        },
+        {
+          "info": {
+            "name": "Class CO2EmissionsController",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/co2-emissions"
+          },
+          "docs": "CO2 Emissions data set top-level controller."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

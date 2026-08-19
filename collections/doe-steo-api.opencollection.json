@@ -1,0 +1,139 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "EIA APIv2 AEO STEO API",
+    "version": "2.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api_key",
+      "value": "{{api_key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "STEO",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /v2/steo",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/steo"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/steo/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/steo/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/steo/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/steo/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/steo/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/steo/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Class STEOController",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/steo/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "STEO data set top-level controller."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

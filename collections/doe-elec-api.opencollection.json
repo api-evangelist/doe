@@ -1,0 +1,493 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "EIA APIv2 AEO ELEC API",
+    "version": "2.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api_key",
+      "value": "{{api_key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "ELEC",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /v2/electricity/facility-fuel/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/facility-fuel/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/electric-power-operational-data/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/electric-power-operational-data/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/operating-generator-capacity/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/operating-generator-capacity/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/retail-sales/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/retail-sales/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "Class ElectricityController",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity"
+          },
+          "docs": "Electricity data set top-level controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/facility-fuel",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/facility-fuel"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/facility-fuel/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/facility-fuel/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/facility-fuel/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/facility-fuel/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Class FacilityFuelController",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/electricity/facility-fuel/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Electricity FacilityFuel dataset controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/electric-power-operational-data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/electric-power-operational-data"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/electric-power-operational-data/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/electric-power-operational-data/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/electric-power-operational-data/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/electric-power-operational-data/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return Electricity electric-power-operational Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/electricity/electric-power-operational-data/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class GenerationController\n\nElectricity generation dataset controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/operating-generator-capacity",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/operating-generator-capacity"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/operating-generator-capacity/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/operating-generator-capacity/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/operating-generator-capacity/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/operating-generator-capacity/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return Electricity operating-generator-capacity Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/electricity/operating-generator-capacity/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class GeneratorLevelCapacityController\n\nElectricity generation dataset controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/retail-sales",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/retail-sales"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/retail-sales/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/retail-sales/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/electricity/retail-sales/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/electricity/retail-sales/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return Electricity retail-sales Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/electricity/retail-sales/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class RetailSalesController\n\nElectricity retail sales dataset controller."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,1530 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "EIA APIv2 AEO COAL API",
+    "version": "2.1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api_key",
+      "value": "{{api_key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "COAL",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "GET /v2/coal/aggregate-production/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/aggregate-production/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/consumption-and-quality/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/consumption-and-quality/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/exports-imports-quantity-price/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/exports-imports-quantity-price/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/market-sales-price/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/market-sales-price/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/mine-production/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/mine-production/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/price-by-rank/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/price-by-rank/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/reserves-capacity/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/reserves-capacity/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/by-mine-by-plant/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/by-mine-by-plant/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/mine-aggregates/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/mine-aggregates/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/mine-state-aggregates/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/mine-state-aggregates/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/plant-aggregates/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/plant-aggregates/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/plant-state-aggregates/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/plant-state-aggregates/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/receipts/facet/{facet_id}",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/receipts/facet/:facet_id",
+            "params": [
+              {
+                "name": "facet_id",
+                "value": "",
+                "type": "path",
+                "description": "Facet ID"
+              }
+            ]
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/aggregate-production",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/aggregate-production"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/aggregate-production/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/aggregate-production/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/aggregate-production/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/aggregate-production/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return aggregate-production Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/aggregate-production/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class AggregateProductionController\n\nAggregate Production data set top-level controller."
+        },
+        {
+          "info": {
+            "name": "Class CoalController",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal"
+          },
+          "docs": "Coal data set top-level controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/consumption-and-quality",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/consumption-and-quality"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/consumption-and-quality/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/consumption-and-quality/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/consumption-and-quality/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/consumption-and-quality/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return consumption-and-quality Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/consumption-and-quality/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Return consumption-and-quality Data"
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/exports-imports-quantity-price",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/exports-imports-quantity-price"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/exports-imports-quantity-price/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/exports-imports-quantity-price/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/exports-imports-quantity-price/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/exports-imports-quantity-price/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return exports-imports-quantity-price Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/exports-imports-quantity-price/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class ExportsImportsQuantityPriceController\n\nExports\\Imports Quantity\\Price data set top-level controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/market-sales-price",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/market-sales-price"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/market-sales-price/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/market-sales-price/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/market-sales-price/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/market-sales-price/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return market-sales-price Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/market-sales-price/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class MarketSalesPriceController\n\nMarket Sales Price data set top-level controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/mine-production",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/mine-production"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/mine-production/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/mine-production/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/mine-production/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/mine-production/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return mine-production Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/mine-production/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class MinProductionController\n\nMine Production data set top-level controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/price-by-rank",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/price-by-rank"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/price-by-rank/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/price-by-rank/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/price-by-rank/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/price-by-rank/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return price-by-rank Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/price-by-rank/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class PriceByRankController\n\nPrice By Rank data set top-level controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/reserves-capacity",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/reserves-capacity"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/reserves-capacity/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/reserves-capacity/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/reserves-capacity/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/reserves-capacity/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return reserves-capacity data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/reserves-capacity/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class ReservesCapacityController\n\nReserves Capacity data set top-level controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/by-mine-by-plant",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/by-mine-by-plant"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/by-mine-by-plant/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/by-mine-by-plant/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/by-mine-by-plant/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/by-mine-by-plant/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return shipments by-mine-by-plant data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/shipments/by-mine-by-plant/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Return shipments by-mine-by-plant data"
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/mine-aggregates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/mine-aggregates"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/mine-aggregates/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/mine-aggregates/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/mine-aggregates/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/mine-aggregates/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return shipments mine-aggregates data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/shipments/mine-aggregates/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Return shipments mine-aggregates data"
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/mine-state-aggregates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/mine-state-aggregates"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/mine-state-aggregates/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/mine-state-aggregates/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/mine-state-aggregates/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/mine-state-aggregates/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return shipments mine-state-aggregates data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/shipments/mine-state-aggregates/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Return shipments mine-state-aggregates data"
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/plant-aggregates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/plant-aggregates"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/plant-aggregates/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/plant-aggregates/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/plant-aggregates/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/plant-aggregates/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return shipments plant-aggregates data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/shipments/plant-aggregates/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class PlantAggregateController\n\nCoal\\Shipments dataset controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/plant-state-aggregates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/plant-state-aggregates"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/plant-state-aggregates/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/plant-state-aggregates/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/plant-state-aggregates/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/plant-state-aggregates/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return shipments plant-state-aggregates data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/shipments/plant-state-aggregates/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class PlantStateAggregateController\n\nCoal\\Shipments dataset controller."
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/receipts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/receipts"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/receipts/facet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/receipts/facet"
+          }
+        },
+        {
+          "info": {
+            "name": "GET /v2/coal/shipments/receipts/data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments/receipts/data",
+            "params": [
+              {
+                "name": "data",
+                "value": "",
+                "type": "query",
+                "description": "Data columns to filter by"
+              },
+              {
+                "name": "facets",
+                "value": "",
+                "type": "query",
+                "description": "Facets to filter by"
+              },
+              {
+                "name": "frequency",
+                "value": "",
+                "type": "query",
+                "description": "Frequency to filter by"
+              },
+              {
+                "name": "start",
+                "value": "",
+                "type": "query",
+                "description": "Start date to filter by"
+              },
+              {
+                "name": "end",
+                "value": "",
+                "type": "query",
+                "description": "End date to filter by"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query",
+                "description": "How to sort returned data"
+              },
+              {
+                "name": "length",
+                "value": "",
+                "type": "query",
+                "description": "Max length of returned data"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query",
+                "description": "Offset of returned data"
+              }
+            ]
+          },
+          "docs": "API data with query params"
+        },
+        {
+          "info": {
+            "name": "Return shipments receipts data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.eia.gov/v2/coal/shipments/receipts/data",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Class ReceiptsController\n\nCoal\\Shipments dataset controller."
+        },
+        {
+          "info": {
+            "name": "Class CoalController",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.eia.gov/v2/coal/shipments"
+          },
+          "docs": "Coal data set top-level controller."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
