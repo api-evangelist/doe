@@ -183,6 +183,8 @@ apis:
   humanURL: https://www.eia.gov/opendata/
   baseURL: https://api.eia.gov/v2/
   tags:
+  - Coal
+  tags_raw:
   - COAL
   properties:
   - type: OpenAPI
