@@ -49,7 +49,10 @@ tags:
 apis:
 - aid: doe:nlr-electricity-apis
   name: NLR Electricity APIs
-  description: NREL/NLR Developer Network electricity APIs covering utility rates, electricity costs, generation, transmission, delivery, and monitoring. Includes OpenEI Utility Rates API providing access to utility rate structures for most U.S. utilities. Sponsored by the U.S. Department of Energy.
+  description: >-
+    NREL/NLR Developer Network electricity APIs covering utility rates, electricity costs, generation,
+    transmission, delivery, and monitoring. Includes OpenEI Utility Rates API providing access to utility
+    rate structures for most U.S. utilities. Sponsored by the U.S. Department of Energy.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://developer.nlr.gov/docs/electricity/
   baseURL: https://developer.nlr.gov/api/
@@ -67,7 +70,9 @@ apis:
     url: https://developer.nlr.gov/
 - aid: doe:nlr-solar-apis
   name: NLR Solar Resource APIs
-  description: Solar resource data and analysis APIs from NREL/NLR Developer Network, including NSRDB (National Solar Radiation Database) data access. Sponsored by the U.S. Department of Energy.
+  description: >-
+    Solar resource data and analysis APIs from NREL/NLR Developer Network, including NSRDB (National Solar
+    Radiation Database) data access. Sponsored by the U.S. Department of Energy.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://developer.nlr.gov/docs/solar/
   baseURL: https://developer.nlr.gov/api/
@@ -85,7 +90,9 @@ apis:
     url: https://developer.nlr.gov/
 - aid: doe:nlr-wind-apis
   name: NLR Wind Resource APIs
-  description: Wind resource data and analysis APIs from NREL/NLR Developer Network providing wind speed and direction data for energy planning. Sponsored by the U.S. Department of Energy.
+  description: >-
+    Wind resource data and analysis APIs from NREL/NLR Developer Network providing wind speed and direction
+    data for energy planning. Sponsored by the U.S. Department of Energy.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://developer.nlr.gov/docs/wind/
   baseURL: https://developer.nlr.gov/api/
@@ -103,7 +110,10 @@ apis:
     url: https://developer.nlr.gov/
 - aid: doe:nlr-transportation-apis
   name: NLR Transportation & Alternative Fuels APIs
-  description: Alternative fuel station locator, alternative fuel vehicles database, EV infrastructure (EVI-Pro Lite), battery policies, transportation laws and incentives, and route energy optimization (RouteE) APIs from NREL/NLR. Supports electric vehicle and alternative fuel infrastructure data.
+  description: >-
+    Alternative fuel station locator, alternative fuel vehicles database, EV infrastructure (EVI-Pro Lite),
+    battery policies, transportation laws and incentives, and route energy optimization (RouteE) APIs
+    from NREL/NLR. Supports electric vehicle and alternative fuel infrastructure data.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://developer.nlr.gov/docs/transportation/
   baseURL: https://developer.nlr.gov/api/
@@ -123,7 +133,9 @@ apis:
     url: https://developer.nlr.gov/
 - aid: doe:nlr-buildings-apis
   name: NLR Buildings Energy APIs
-  description: APIs for energy efficiency and use of renewable technologies in residential and commercial buildings from NREL/NLR Developer Network. Sponsored by the U.S. Department of Energy.
+  description: >-
+    APIs for energy efficiency and use of renewable technologies in residential and commercial buildings
+    from NREL/NLR Developer Network. Sponsored by the U.S. Department of Energy.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://developer.nlr.gov/docs/buildings/
   baseURL: https://developer.nlr.gov/api/
@@ -141,7 +153,10 @@ apis:
     url: https://developer.nlr.gov/
 - aid: doe:doe-data-explorer-api
   name: DOE Data Explorer API
-  description: The DOE Data Explorer API allows querying the Department of Energy's repository of research datasets resulting from DOE research funding. Built on REST architecture providing predictable URLs and HTTP-based access.
+  description: >-
+    The DOE Data Explorer API allows querying the Department of Energy's repository of research datasets
+    resulting from DOE research funding. Built on REST architecture providing predictable URLs and HTTP-based
+    access.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.osti.gov/dataexplorer/api/v1/docs
   baseURL: https://www.osti.gov/dataexplorer/api/v1
@@ -479,7 +494,11 @@ apis:
     url: https://www.osti.gov/api/v1/docs
 - aid: doe:osti-pages-api
   name: OSTI DOE PAGES API
-  description: The DOE PAGES (Public Access Gateway for Energy and Science) REST API provides programmatic access to publications resulting from DOE-funded research, hosted by the Office of Scientific and Technical Information (OSTI). The API supports search and retrieval of bibliographic records and full-text links for journal articles, accepted manuscripts, and technical reports.
+  description: >-
+    The DOE PAGES (Public Access Gateway for Energy and Science) REST API provides programmatic access
+    to publications resulting from DOE-funded research, hosted by the Office of Scientific and Technical
+    Information (OSTI). The API supports search and retrieval of bibliographic records and full-text links
+    for journal articles, accepted manuscripts, and technical reports.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.osti.gov/pages/api/v1/docs
   baseURL: https://www.osti.gov/pages/api/v1
@@ -499,7 +518,10 @@ apis:
     url: https://www.osti.gov/contact
 - aid: doe:osti-elink-api
   name: OSTI ELINK API
-  description: The OSTI ELINK API is the Office of Scientific and Technical Information's submission and retrieval interface for DOE research records. It supports submission of metadata and full text by DOE-funded research organizations, and it powers public retrieval interfaces for OSTI.GOV.
+  description: >-
+    The OSTI ELINK API is the Office of Scientific and Technical Information's submission and retrieval
+    interface for DOE research records. It supports submission of metadata and full text by DOE-funded
+    research organizations, and it powers public retrieval interfaces for OSTI.GOV.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.osti.gov/elink/
   baseURL: https://www.osti.gov/elink
@@ -519,7 +541,12 @@ apis:
     url: https://www.osti.gov/contact
 - aid: doe:nrel-developer-api
   name: NREL/NLR Developer Network APIs
-  description: The National Renewable Energy Laboratory (NREL, transitioning to NLR) Developer Network publishes a portfolio of REST APIs covering solar resource and PV simulation, alternative fuels and stations, electricity utilities and rates, transportation, geothermal, and energy economics. All APIs share a common API key model issued through api.data.gov. Existing developer.nrel.gov consumers must migrate to developer.nlr.gov by April 30, 2026.
+  description: >-
+    The National Renewable Energy Laboratory (NREL, transitioning to NLR) Developer Network publishes
+    a portfolio of REST APIs covering solar resource and PV simulation, alternative fuels and stations,
+    electricity utilities and rates, transportation, geothermal, and energy economics. All APIs share
+    a common API key model issued through api.data.gov. Existing developer.nrel.gov consumers must migrate
+    to developer.nlr.gov by April 30, 2026.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://developer.nlr.gov/
   baseURL: https://developer.nlr.gov/api
@@ -548,7 +575,11 @@ apis:
     url: https://developer.nlr.gov/contact-us
 - aid: doe:buildings-performance-database
   name: Buildings Performance Database API
-  description: The Buildings Performance Database (BPD) is a DOE repository of anonymized empirical performance records for commercial and residential buildings. The BPD API allows partners to query aggregate distributions and compare cohorts of buildings across attributes such as building type, vintage, climate zone, and energy use intensity.
+  description: >-
+    The Buildings Performance Database (BPD) is a DOE repository of anonymized empirical performance records
+    for commercial and residential buildings. The BPD API allows partners to query aggregate distributions
+    and compare cohorts of buildings across attributes such as building type, vintage, climate zone, and
+    energy use intensity.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.energy.gov/eere/buildings/application-programming-interface
   baseURL: https://api.example.com
@@ -565,7 +596,10 @@ apis:
     url: https://www.energy.gov/eere/buildings
 - aid: doe:open-data-catalog
   name: Department of Energy Open Data Catalog
-  description: The DOE participates in Data.gov by publishing thousands of dataset records under the doe-gov organization. These datasets cover energy consumption, generation, environmental impact, R&D, and more, and are accessible through Data.gov's CKAN-compatible API.
+  description: >-
+    The DOE participates in Data.gov by publishing thousands of dataset records under the doe-gov organization.
+    These datasets cover energy consumption, generation, environmental impact, R&D, and more, and are
+    accessible through Data.gov's CKAN-compatible API.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://catalog.data.gov/organization/doe-gov
   baseURL: https://catalog.data.gov/api/3
@@ -583,18 +617,16 @@ apis:
   contact:
   - FN: DOE Open Data
     url: https://www.energy.gov/data/open-energy-data
-- aid: doe:department-of-energy-co2-emissions-api
+- aid: doe:doe-co2-emissions-api
   name: Department of Energy Co2 Emissions API
   description: The Co2 Emissions API from Department of Energy — 1 operation(s) for co2 emissions.
-  humanURL: https://www.eia.gov/opendata/
-  baseURL: https://api.eia.gov/v2
+  humanURL: https://developer.nlr.gov/docs/electricity/
+  baseURL: https://developer.nlr.gov/api/
   tags:
-  - CO2 Emissions
-  tags_raw:
   - Co2 Emissions
   properties:
   - type: OpenAPI
-    url: openapi/department-of-energy-co2-emissions-api-openapi.yml
+    url: openapi/doe-co2-emissions-api-openapi.yml
   - type: Documentation
     url: https://www.eia.gov/opendata/documentation.php
   - type: Developer
@@ -605,16 +637,17 @@ apis:
     url: https://www.eia.gov/opendata/register.php
   - type: Reference PDF
     url: https://www.eia.gov/opendata/documentation/APIv2.1.0.pdf
-- aid: doe:department-of-energy-eia-open-data-api-v2-api
+- aid: doe:doe-eia-open-data-api-v2-api
   name: Department of Energy EIA Open Data API V2 API
-  description: The EIA Open Data API V2 API from Department of Energy — 1 operation(s) for eia open data api v2.
-  humanURL: https://www.eia.gov/opendata/
-  baseURL: https://api.eia.gov/v2
+  description: >-
+    The EIA Open Data API V2 API from Department of Energy — 1 operation(s) for eia open data api v2.
+  humanURL: https://developer.nlr.gov/docs/electricity/
+  baseURL: https://developer.nlr.gov/api/
   tags:
   - EIA Open Data API V2
   properties:
   - type: OpenAPI
-    url: openapi/department-of-energy-eia-open-data-api-v2-api-openapi.yml
+    url: openapi/doe-eia-open-data-api-v2-api-openapi.yml
   - type: Documentation
     url: https://www.eia.gov/opendata/documentation.php
   - type: Developer
@@ -625,16 +658,16 @@ apis:
     url: https://www.eia.gov/opendata/register.php
   - type: Reference PDF
     url: https://www.eia.gov/opendata/documentation/APIv2.1.0.pdf
-- aid: doe:department-of-energy-electricity-api
+- aid: doe:doe-electricity-api
   name: Department of Energy Electricity API
   description: The Electricity API from Department of Energy — 2 operation(s) for electricity.
-  humanURL: https://www.eia.gov/opendata/
-  baseURL: https://api.eia.gov/v2
+  humanURL: https://developer.nlr.gov/docs/electricity/
+  baseURL: https://developer.nlr.gov/api/
   tags:
   - Electricity
   properties:
   - type: OpenAPI
-    url: openapi/department-of-energy-electricity-api-openapi.yml
+    url: openapi/doe-electricity-api-openapi.yml
   - type: Documentation
     url: https://www.eia.gov/opendata/documentation.php
   - type: Developer
@@ -645,16 +678,16 @@ apis:
     url: https://www.eia.gov/opendata/register.php
   - type: Reference PDF
     url: https://www.eia.gov/opendata/documentation/APIv2.1.0.pdf
-- aid: doe:department-of-energy-international-api
+- aid: doe:doe-international-api
   name: Department of Energy International API
   description: The International API from Department of Energy — 1 operation(s) for international.
-  humanURL: https://www.eia.gov/opendata/
-  baseURL: https://api.eia.gov/v2
+  humanURL: https://developer.nlr.gov/docs/electricity/
+  baseURL: https://developer.nlr.gov/api/
   tags:
   - International
   properties:
   - type: OpenAPI
-    url: openapi/department-of-energy-international-api-openapi.yml
+    url: openapi/doe-international-api-openapi.yml
   - type: Documentation
     url: https://www.eia.gov/opendata/documentation.php
   - type: Developer
@@ -665,16 +698,16 @@ apis:
     url: https://www.eia.gov/opendata/register.php
   - type: Reference PDF
     url: https://www.eia.gov/opendata/documentation/APIv2.1.0.pdf
-- aid: doe:department-of-energy-natural-gas-api
+- aid: doe:doe-natural-gas-api
   name: Department of Energy Natural Gas API
   description: The Natural Gas API from Department of Energy — 1 operation(s) for natural gas.
-  humanURL: https://www.eia.gov/opendata/
-  baseURL: https://api.eia.gov/v2
+  humanURL: https://developer.nlr.gov/docs/electricity/
+  baseURL: https://developer.nlr.gov/api/
   tags:
   - Natural Gas
   properties:
   - type: OpenAPI
-    url: openapi/department-of-energy-natural-gas-api-openapi.yml
+    url: openapi/doe-natural-gas-api-openapi.yml
   - type: Documentation
     url: https://www.eia.gov/opendata/documentation.php
   - type: Developer
@@ -685,16 +718,16 @@ apis:
     url: https://www.eia.gov/opendata/register.php
   - type: Reference PDF
     url: https://www.eia.gov/opendata/documentation/APIv2.1.0.pdf
-- aid: doe:department-of-energy-nuclear-outages-api
+- aid: doe:doe-nuclear-outages-api
   name: Department of Energy Nuclear Outages API
   description: The Nuclear Outages API from Department of Energy — 1 operation(s) for nuclear outages.
-  humanURL: https://www.eia.gov/opendata/
-  baseURL: https://api.eia.gov/v2
+  humanURL: https://developer.nlr.gov/docs/electricity/
+  baseURL: https://developer.nlr.gov/api/
   tags:
   - Nuclear Outages
   properties:
   - type: OpenAPI
-    url: openapi/department-of-energy-nuclear-outages-api-openapi.yml
+    url: openapi/doe-nuclear-outages-api-openapi.yml
   - type: Documentation
     url: https://www.eia.gov/opendata/documentation.php
   - type: Developer
@@ -705,16 +738,16 @@ apis:
     url: https://www.eia.gov/opendata/register.php
   - type: Reference PDF
     url: https://www.eia.gov/opendata/documentation/APIv2.1.0.pdf
-- aid: doe:department-of-energy-petroleum-api
+- aid: doe:doe-petroleum-api
   name: Department of Energy Petroleum API
   description: The Petroleum API from Department of Energy — 1 operation(s) for petroleum.
-  humanURL: https://www.eia.gov/opendata/
-  baseURL: https://api.eia.gov/v2
+  humanURL: https://developer.nlr.gov/docs/electricity/
+  baseURL: https://developer.nlr.gov/api/
   tags:
   - Petroleum
   properties:
   - type: OpenAPI
-    url: openapi/department-of-energy-petroleum-api-openapi.yml
+    url: openapi/doe-petroleum-api-openapi.yml
   - type: Documentation
     url: https://www.eia.gov/opendata/documentation.php
   - type: Developer
@@ -725,16 +758,16 @@ apis:
     url: https://www.eia.gov/opendata/register.php
   - type: Reference PDF
     url: https://www.eia.gov/opendata/documentation/APIv2.1.0.pdf
-- aid: doe:department-of-energy-seriesid-api
+- aid: doe:doe-seriesid-api
   name: Department of Energy Seriesid API
   description: The Seriesid API from Department of Energy — 1 operation(s) for seriesid.
-  humanURL: https://www.eia.gov/opendata/
-  baseURL: https://api.eia.gov/v2
+  humanURL: https://developer.nlr.gov/docs/electricity/
+  baseURL: https://developer.nlr.gov/api/
   tags:
   - Seriesid
   properties:
   - type: OpenAPI
-    url: openapi/department-of-energy-seriesid-api-openapi.yml
+    url: openapi/doe-seriesid-api-openapi.yml
   - type: Documentation
     url: https://www.eia.gov/opendata/documentation.php
   - type: Developer
@@ -745,16 +778,16 @@ apis:
     url: https://www.eia.gov/opendata/register.php
   - type: Reference PDF
     url: https://www.eia.gov/opendata/documentation/APIv2.1.0.pdf
-- aid: doe:department-of-energy-total-energy-api
+- aid: doe:doe-total-energy-api
   name: Department of Energy Total Energy API
   description: The Total Energy API from Department of Energy — 1 operation(s) for total energy.
-  humanURL: https://www.eia.gov/opendata/
-  baseURL: https://api.eia.gov/v2
+  humanURL: https://developer.nlr.gov/docs/electricity/
+  baseURL: https://developer.nlr.gov/api/
   tags:
   - Total Energy
   properties:
   - type: OpenAPI
-    url: openapi/department-of-energy-total-energy-api-openapi.yml
+    url: openapi/doe-total-energy-api-openapi.yml
   - type: Documentation
     url: https://www.eia.gov/opendata/documentation.php
   - type: Developer
