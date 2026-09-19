@@ -623,6 +623,8 @@ apis:
   humanURL: https://developer.nlr.gov/docs/electricity/
   baseURL: https://developer.nlr.gov/api/
   tags:
+  - CO2 Emissions
+  tags_raw:
   - Co2 Emissions
   properties:
   - type: OpenAPI
