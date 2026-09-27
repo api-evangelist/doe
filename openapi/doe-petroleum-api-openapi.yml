@@ -28,14 +28,6 @@ paths:
       tags:
       - Petroleum
 components:
-  parameters:
-    ApiKey:
-      name: api_key
-      in: query
-      required: true
-      schema:
-        type: string
-      description: EIA Open Data API key.
   schemas:
     RouteResponse:
       type: object
@@ -49,6 +41,14 @@ components:
           additionalProperties: true
         apiVersion:
           type: string
+  parameters:
+    ApiKey:
+      name: api_key
+      in: query
+      required: true
+      schema:
+        type: string
+      description: EIA Open Data API key.
   securitySchemes:
     apiKeyQuery:
       type: apiKey

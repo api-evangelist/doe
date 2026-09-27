@@ -28,12 +28,14 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    RouteResponse:
+    RouteResponseContainer:
       properties:
-        response:
-          $ref: '#/components/schemas/Routes'
+        apiVersion:
+          type: string
         request:
           $ref: '#/components/schemas/RouteRequest'
+        response:
+          $ref: '#/components/schemas/RouteResponse'
       type: object
     RouteRequest:
       properties:
@@ -56,14 +58,12 @@ components:
         description:
           type: string
       type: object
-    RouteResponseContainer:
+    RouteResponse:
       properties:
-        apiVersion:
-          type: string
+        response:
+          $ref: '#/components/schemas/Routes'
         request:
           $ref: '#/components/schemas/RouteRequest'
-        response:
-          $ref: '#/components/schemas/RouteResponse'
       type: object
   responses:
     route:

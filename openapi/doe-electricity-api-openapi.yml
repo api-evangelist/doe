@@ -50,18 +50,6 @@ paths:
       - Electricity
 components:
   schemas:
-    RouteResponse:
-      type: object
-      additionalProperties: true
-      properties:
-        response:
-          type: object
-          additionalProperties: true
-        request:
-          type: object
-          additionalProperties: true
-        apiVersion:
-          type: string
     DataResponse:
       type: object
       additionalProperties: true
@@ -82,6 +70,18 @@ components:
           additionalProperties: true
         apiVersion:
           type: string
+    RouteResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        response:
+          type: object
+          additionalProperties: true
+        request:
+          type: object
+          additionalProperties: true
+        apiVersion:
+          type: string
   parameters:
     End:
       name: end
@@ -89,6 +89,12 @@ components:
       schema:
         type: string
       description: Period end (inclusive).
+    Offset:
+      name: offset
+      in: query
+      schema:
+        type: integer
+      description: Pagination offset.
     ApiKey:
       name: api_key
       in: query
@@ -102,24 +108,18 @@ components:
       schema:
         type: string
       description: Period start (inclusive).
-    Length:
-      name: length
-      in: query
-      schema:
-        type: integer
-      description: Maximum rows to return.
-    Offset:
-      name: offset
-      in: query
-      schema:
-        type: integer
-      description: Pagination offset.
     Frequency:
       name: frequency
       in: query
       schema:
         type: string
       description: Period frequency (e.g., monthly, quarterly, annual).
+    Length:
+      name: length
+      in: query
+      schema:
+        type: integer
+      description: Maximum rows to return.
   securitySchemes:
     apiKeyQuery:
       type: apiKey
