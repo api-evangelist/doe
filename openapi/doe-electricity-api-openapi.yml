@@ -49,19 +49,45 @@ paths:
       tags:
       - Electricity
 components:
+  parameters:
+    Start:
+      name: start
+      in: query
+      schema:
+        type: string
+      description: Period start (inclusive).
+    Offset:
+      name: offset
+      in: query
+      schema:
+        type: integer
+      description: Pagination offset.
+    End:
+      name: end
+      in: query
+      schema:
+        type: string
+      description: Period end (inclusive).
+    Length:
+      name: length
+      in: query
+      schema:
+        type: integer
+      description: Maximum rows to return.
+    ApiKey:
+      name: api_key
+      in: query
+      required: true
+      schema:
+        type: string
+      description: EIA Open Data API key.
+    Frequency:
+      name: frequency
+      in: query
+      schema:
+        type: string
+      description: Period frequency (e.g., monthly, quarterly, annual).
   schemas:
-    RouteResponse:
-      type: object
-      additionalProperties: true
-      properties:
-        response:
-          type: object
-          additionalProperties: true
-        request:
-          type: object
-          additionalProperties: true
-        apiVersion:
-          type: string
     DataResponse:
       type: object
       additionalProperties: true
@@ -82,44 +108,18 @@ components:
           additionalProperties: true
         apiVersion:
           type: string
-  parameters:
-    End:
-      name: end
-      in: query
-      schema:
-        type: string
-      description: Period end (inclusive).
-    Length:
-      name: length
-      in: query
-      schema:
-        type: integer
-      description: Maximum rows to return.
-    Offset:
-      name: offset
-      in: query
-      schema:
-        type: integer
-      description: Pagination offset.
-    ApiKey:
-      name: api_key
-      in: query
-      required: true
-      schema:
-        type: string
-      description: EIA Open Data API key.
-    Start:
-      name: start
-      in: query
-      schema:
-        type: string
-      description: Period start (inclusive).
-    Frequency:
-      name: frequency
-      in: query
-      schema:
-        type: string
-      description: Period frequency (e.g., monthly, quarterly, annual).
+    RouteResponse:
+      type: object
+      additionalProperties: true
+      properties:
+        response:
+          type: object
+          additionalProperties: true
+        request:
+          type: object
+          additionalProperties: true
+        apiVersion:
+          type: string
   securitySchemes:
     apiKeyQuery:
       type: apiKey
