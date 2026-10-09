@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: Department of Energy API Plans & Pricing
 description: Pricing and access plans for Department of Energy APIs including EIA Open Data, NREL/NLR Developer Network, and OSTI APIs.
 url: https://raw.githubusercontent.com/api-evangelist/doe/refs/heads/main/plans/doe-plans-pricing.yml
@@ -92,3 +96,46 @@ plans:
       - JSON, XML, and BibTeX formats
       - Pagination support
     authentication: None
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units:
+  - period
+  plans:
+  - name: Free (EIA Open Data)
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - period
+    periods: []
+  - name: Free (NLR/NREL Developer Network)
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - period
+    periods: []
+  - name: DEMO_KEY (NLR/NREL Developer Network)
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - period
+    periods: []
+  - name: Custom / Enterprise (NLR/NREL Developer Network)
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - period
+    periods: []
+  - name: Free (OSTI.GOV API)
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - period
+    periods: []
