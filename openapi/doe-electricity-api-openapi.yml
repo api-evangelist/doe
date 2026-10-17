@@ -49,44 +49,6 @@ paths:
       tags:
       - Electricity
 components:
-  parameters:
-    Start:
-      name: start
-      in: query
-      schema:
-        type: string
-      description: Period start (inclusive).
-    Offset:
-      name: offset
-      in: query
-      schema:
-        type: integer
-      description: Pagination offset.
-    End:
-      name: end
-      in: query
-      schema:
-        type: string
-      description: Period end (inclusive).
-    Length:
-      name: length
-      in: query
-      schema:
-        type: integer
-      description: Maximum rows to return.
-    ApiKey:
-      name: api_key
-      in: query
-      required: true
-      schema:
-        type: string
-      description: EIA Open Data API key.
-    Frequency:
-      name: frequency
-      in: query
-      schema:
-        type: string
-      description: Period frequency (e.g., monthly, quarterly, annual).
   schemas:
     DataResponse:
       type: object
@@ -120,6 +82,44 @@ components:
           additionalProperties: true
         apiVersion:
           type: string
+  parameters:
+    ApiKey:
+      name: api_key
+      in: query
+      required: true
+      schema:
+        type: string
+      description: EIA Open Data API key.
+    Start:
+      name: start
+      in: query
+      schema:
+        type: string
+      description: Period start (inclusive).
+    Offset:
+      name: offset
+      in: query
+      schema:
+        type: integer
+      description: Pagination offset.
+    Frequency:
+      name: frequency
+      in: query
+      schema:
+        type: string
+      description: Period frequency (e.g., monthly, quarterly, annual).
+    Length:
+      name: length
+      in: query
+      schema:
+        type: integer
+      description: Maximum rows to return.
+    End:
+      name: end
+      in: query
+      schema:
+        type: string
+      description: Period end (inclusive).
   securitySchemes:
     apiKeyQuery:
       type: apiKey

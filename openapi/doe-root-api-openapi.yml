@@ -27,6 +27,13 @@ paths:
       operationId: getV2
       x-operation-id-source: derived
 components:
+  responses:
+    route:
+      description: List of API data sets
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RouteResponseContainer'
   schemas:
     RouteRequest:
       properties:
@@ -65,13 +72,6 @@ components:
         request:
           $ref: '#/components/schemas/RouteRequest'
       type: object
-  responses:
-    route:
-      description: List of API data sets
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/RouteResponseContainer'
   securitySchemes:
     api_key:
       type: apiKey
