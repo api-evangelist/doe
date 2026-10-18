@@ -176,6 +176,8 @@ apis:
   humanURL: https://www.eia.gov/opendata/
   baseURL: https://api.eia.gov/v2/
   tags:
+  - Answer Engine Optimization
+  tags_raw:
   - AEO
   properties:
   - type: OpenAPI
@@ -503,6 +505,11 @@ apis:
   humanURL: https://www.osti.gov/pages/api/v1/docs
   baseURL: https://www.osti.gov/pages/api/v1
   tags:
+  - Bibliographic Records
+  - OSTI
+  - Publications
+  - Research
+  tags_raw:
   - Bibliographic
   - OSTI
   - Publications
